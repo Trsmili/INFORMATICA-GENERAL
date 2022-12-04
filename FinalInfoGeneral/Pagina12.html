@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title> Pagina 12 </title>
+<link href="Estilos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class="logo">
+	<img src="IMAGENES/Header.PNG" Alt="header" width="200.px" height="200px">
+</div>
+<nav>
+ <ul class="menu-horizontal">
+
+	<li><a href="index.html"> Inicio </a>
+<ul class="menu-vertical">
+	<li> <a href="Pagina11.html"> Predicciones </a> </li>
+	<li><a href="Pagina12.html"> Signos compatibles</a></li>
+</ul>
+</li>
+
+	<li><a href="Pagina2.html"> Datita </a>
+
+<ul class="menu-vertical">
+	  <li><a href="Pagina7.html"> Singos de Aire </a></li>
+	  <li><a href="Pagina8.html"> Signo de Fuego </a></li>
+	  <li><a href="Pagina9.html">Signos de Agua </a></li>
+	  <li><a href="Pagina10.html">Signos de Tierra</a> </li>
+</ul>
+</li>
+
+    <li><a href="Pagina3.html"> Galeria </a></li>
+
+	<li><a href="Pagina4.html"> Juego </a></li>
+	<li><a href="Pagina5.html"> Formulario </a></li>
+	<li><a href="Pagina6.html"> Informacion del alumno </a></li>
+</ul>
+ </nav>
+	
+</header>
+<h1> Compatibilidades</h1>
+<a> </a>
+<div class="Compatibilidades">
+	<div class="caja3"><a>Libra</a><img src="IMAGENES/LibraAries.png" alt="LA"><a>Aires</a></div>
+	<button  id="boton" onclick="mostrar();">Mostrar </button>
+	<a id="Libra"> Aries es impulsivo, explosivo, impaciente (parece llevar prisa todo el tiempo) y egocéntrico, mientras que Libra es más calmado, contemplativo y se toma su tiempo para hacer las cosas. Estos dos signos son el complemento ideal porque Libra puede moderar los impulsos de Aries y estimular la dulzura que hay en él y Libra se sienten inspirado por Aries para desarrollar dinamismo, combatividad y autonomía. </a>
+	<button id="boton" onclick="ocultar();">ocultar</button>
+
+	<div class="caja4"><a>Tauro</a><img src="IMAGENES/TauroEscorpio.png" alt="TE"><a> escorpio </a></div>
+	<button  id="boton" onclick="mostrar();">Mostrar </button>
+    <a id="Tauro"> Escorpio es de extremos, busca experiencias exóticas y no le dan miedo los nuevos comienzos. Tauro es más centrado, le gusta la vida rutinaria, la tranquilidad y las posesiones. Junto a Tauro, Escorpión aprende a disfrutar de los pequeños placeres de la vida, se estabiliza y es más perseverante. Mientras que Tauro aprende de Escorpio a ser menos terco, más libre y a tener la sabiduría de cerrar y abrir ciclos. </a>
+    <button id="boton" onclick="ocultar();">ocultar</button>
+
+	<div class="caja3"><a>Geminis</a><img src="IMAGENES/GeminisSagitario.png" alt="GS"><a>Sagitario</a></div>
+	<button  id="boton" onclick="mostrar();">Mostrar </button>
+	<a id="Geminis"> Géminis es de carácter adaptable, influenciable y muy reflexivo, al contrario de Sagitario que es indomable y no varía su forma de ser. Al estar en contacto, Géminis aprende a ser sincero, entusiasta, constante y tenaz; mientras que Sagitario se inspira en su signo opuesto para desarrollar tacto, reflexión, modestia e imponerse límites.</a>
+	<button id="boton" onclick="ocultar();">ocultar</button>
+    
+
+	<div class="caja4"><a>Cancer</a><img src="IMAGENES/CancerCapricornio.png" alt="CC"><a>Capricornio</a></div>
+	<button  id="boton" onclick="mostrar();">Mostrar </button>
+	<a id="Cancer"> Cáncer es dulce, tierno, sensible y vuelve a las personas indispensables en su vida, caso contrario a Capricornio, que es más de personalidad rígida, fría, realista, muy disciplinado e independiente. Por estas notables contrariedades, Capricornio aprende de Cáncer a ser generoso, delicado y a ser un tanto soñador. A lado de Capricornio, Cáncer aprende a ser más fuerte de sentimientos, manejar sus emociones y a desarrollar ambición.</a>
+	<button id="boton" onclick="ocultar();">ocultar</button>
+
+
+
+	<div class="caja3"><a>Virgo</a><img src="IMAGENES/VirgoPiscis.png" Alt="VP"><a>Piscis</a></div>
+	<button  id="boton" onclick="mostrar();">Mostrar </button>
+	<a id="Virgo">Virgo es discreto, tímido, disciplinado, perfeccionista y ansioso, lo opuesto a Piscis que es muy soñador, se deja llevar y tiende a ser indisciplinado en sus responsabilidades. Junto a Virgo, Piscis aprende a ser más valiente para afrontar la realidad, mientras que Virgo se relaja junto a su signo opuesto y se vuelve menos perfeccionista.</a>
+	<button id="boton" onclick="ocultar();">ocultar</button>
+
+
+	<div class="caja4"><a>Leo</a><img src="IMAGENES/LeoAcuario.png" alt="LA"><a>Acuario</a></div>
+	<button  id="boton" onclick="mostrar('leo');">Mostrar </button>
+	<a id="Leo"> Leo es generoso, muy enérgico, ambicioso, autoritario, egocéntrico y se impone en cualquier situación. Acuario es un ser original, un poco indisciplinado, sutil y fraternal; junto a Leo, Acuario puede desarrollar su sentido de la organización, ser más audaz, confiado y menos rebelde; mientras que Leo aprende de Acuario a ser más humano, tolerante y creativo. </a>
+	<button id="boton" onclick="ocultar();">ocultar</button>
+</div>
+
+<script type="text/javascript">
+
+	function mostrar(){
+		document.getElementById('Libra').style.display="block";
+		document.getElementById('Tauro').style.display="block";
+		document.getElementById('Geminis').style.display="block";
+		document.getElementById('Cancer').style.display="block";
+		document.getElementById('Virgo').style.display="block";
+		document.getElementById('Leo').style.display="block";
+	} 
+
+	function ocultar(){
+		document.getElementById('Libra').style.display="none";
+		document.getElementById('Tauro').style.display="none";
+		document.getElementById('Geminis').style.display="none";
+		document.getElementById('Cancer').style.display="none";
+		document.getElementById('Virgo').style.display="none";
+		document.getElementById('Leo').style.display="none";
+
+	}
+</script>
+</body>
+<footer> INFORMATICA GENERAL - 2020- DRELICHMAN UNA </footer> 
+</html>

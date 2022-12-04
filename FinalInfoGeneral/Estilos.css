@@ -1,0 +1,220 @@
+#perder, #nivel1, #nivel2, #juego2, #preguntaextra, #intentalodenuevo, #perder2 {
+	display: none;
+}
+body{ 
+	background:#DAF7A6;
+	font-family: 'East Sea Dokdo', cursive; 
+	font-size: 20px;
+}
+header {
+	background:#830C4F ;
+	height: 30%;
+	display:flex;
+	align-items: center;
+	max-width:200%;
+	min-width: 50%;
+	margin-top: 50px;
+	font-size: 20px;
+	text-decoration: none;
+}
+ 
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > a{
+	display: block;
+	text-decoration: none;
+	color: #DD5FF1;
+	padding: 10px;
+}
+.menu-vertical {
+	position: absolute;
+	display: none;
+	list-style: none;
+	width:200px;
+	background-color: rgba(0,0,0,.5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	blackground-color:black;
+}
+
+.menu-vertical li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+ .galeria{
+ 	width:  80%;
+ 	margin: 50px auto 50px;
+ 	display: grid; /*grillas img*/
+ 	grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+ 	gap: 30px;
+ }
+.galeria img {
+	width: 100%;
+	cursor: pointer;
+	transition: 1s;
+}
+.galeria img:hover{
+	transform: scale(1.2);
+}
+
+.ful-img{
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.9);
+	position: fixed;
+	top: 0;
+	left:0;
+	display: none;
+	align-items: ceneter;
+	justify-content: center;
+	z-index: 99;
+}
+
+.ful-img img{
+	width: 50%;
+	max-width:500% ;
+}
+.ful-img span{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+#Libra, #Tauro , #Geminis , #Cancer , #Virgo , #Leo{
+		display:none;
+		background-color:#830C4F ;
+}
+#boton{
+	background-color:#EEA2F2 ;
+	width: 10%;
+	margin-left: 27%;
+}
+
+.formulario , .Infor{
+	display: flex;
+	background-color: #830C4F;
+	padding-left: 30%;
+}
+.caja1{
+	display: flex;
+	justify-content: space-evenly;
+	text-align: justify;
+height: 300px;
+max-width: 100%;
+min-width: 50%;
+background-color:#830C4F;
+margin-top: 5px;
+color: white;
+}
+.caja1 img{
+	display: block;
+	margin-top: 25px;
+	height: 250px;
+	margin-left:2%;
+}
+.caja1 a{
+	margin-top: 2%;
+	font-size: 20px;
+	margin-left:10%;
+	margin-right:10%;
+	color: white;
+}
+.caja2{
+	display: flex;
+	float: left;
+	background-color:#830C4F;
+	margin-right:10%;
+	margin-left: 10%;
+	margin-top: 2%;
+}
+.caja3 {
+	margin-left: 30%;
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+	background-color:#830C4F; 
+	height: 10%;
+	width: 40%;
+}
+.caja4{
+	margin-left: 30%;
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+	background-color: #EEA2F2;
+	height: 10%;
+	width: 40%;
+}
+.Compatibilidades img{
+	display: flex;
+	align-content: center;
+	width:40% ;
+	height: 10%;
+}
+.caja-Astrologia{
+	background-color: #EEA2F2;
+
+}
+.caja-Astrologia .img{
+display: flex;
+justify-content: center;
+margin: 0, 5%;
+height: 30%;
+width: 30%;
+}
+.predic{
+background-color: #830C4F;
+text-align: center;
+margin-top: 1%;
+}
+.predic a{
+	text-decoration: none;
+	font-size: 30px;
+}
+.contenedor-simb{
+display: flex;
+align-items: center;
+}
+.contenedor-simb img{
+	width: 100%;
+	height: 50%;
+}
+
+.contenedordeniveles{
+	margin-top: 1em;
+}
+#sectionnivel1{
+    background-color: #830C4F;
+}
+#perder{background-color:#EEA2F2 ;
+	padding: 1em;
+	text-align: center;
+}
+#perder2{
+	background-color:#EEA2F2 ;
+	padding: 1em;
+	text-align: center;
+}
+#sectionnivel2{
+    background-color: #830C4F;
+}
+#sectioniniciar , #iniciarto , #inicio{
+	display: flex;
+	justify-items: center;
+    background-color:#830C4F;
+}
+.caja3 .caja4 #Libra #Tauro #Geminis #Cancer #Tauro{
+	display: none;
+}
+footer {
+	text-align: center;
+}

@@ -1,0 +1,142 @@
+<! doctype html>
+<html lang="ES">
+<head>
+<meta charset="UTF-8">
+<title> Juego uno. Preguntas </title>
+<link rel="stylesheet" type="text/css" href="Estilos.css">
+</head>
+<body>	<header>
+<div class="logo">
+	<img src="IMAGENES/Header.png" Alt="header" width="200.px" height="200px">
+</div>
+<nav>
+ <ul class="menu-horizontal">
+
+	<li><a href="index.html"> Inicio </a>
+<ul class="menu-vertical">
+	<li> <a href="Pagina11.html"> Predicciones </a> </li>
+    <li><a href="Pagina12.html"> Galeria de videos </a></li>
+</ul>
+</li>
+
+	<li><a href="Pagina2.html"> Datita </a>
+
+<ul class="menu-vertical">
+	  <li><a href="Pagina7.html"> Singos de Aire </a></li>
+	  <li><a href="Pagina8.html"> Signo de Fuego </a></li>
+	  <li><a href="Pagina9.html">Signos de Agua </a></li>
+	  <li><a href="Pagina10.html">Signos de Tierra</a> </li>
+</ul>
+</li>
+
+    <li><a href="Pagina3.html"> Galeria </a></li>
+
+	<li><a href="Pagina4.html"> Juego </a></li>
+	<li><a href="Pagina5.html"> Formulario </a></li>
+	<li><a href="Pagina6.html"> Informacion del alumno </a></li>
+</ul>
+ </nav>
+</header>
+<div class="contenedordeniveles">
+    <section id="sectioniniciar">
+       <form name="iniciartodo" id="iniciartodo">
+    
+    <input type="button" name="iniciarto" id="iniciarto" value="Comenzar Preguntas" onclick="iniciartod();"><br>
+    <input type="button" name="intentalodenuevo" id="intentalodenuevo" value="Intentalo de nuevo" onclick="reiniciar();"><br>
+
+       </form>
+    </section>
+
+
+    <section id="sectionnivel1"> 
+
+<div id="nivel1">Nivel 1 </div>
+
+<form name="juego" id="juego">
+    <input type="button" name="inicio" id="inicio" value="Iniciar con el cuestionario" onclick="iniciar();"><br>
+    <label for="user" id="preg"></label><br>
+    <input type="text" name="user" id="user" placeholder="Ingresar respuesta"><br>
+    <input type="button" name="resp" id="resp" value="Enviar respuesta" disabled onclick="responder();"><br>
+    <input type="button" name="verif" id="verif" value="Verificar si paso al nivel 2" disabled onclick="verificar();"><br>
+    <input type="text" name="puntniv1" id="puntniv1"><br>
+</form><br>
+
+</section>
+<div id="perder"> No alcanzaste el puntaje, no podrás seguir jugando</div>
+<div id="perder2"> No alcanzaste el puntaje no podrás seguir jugando</div>
+
+<section id="sectionnivel2">
+<div id="nivel2">Nivel 2 </div><br>
+
+<div id="perder2"> No sos un verdadero Fan - No podrás seguir jugando</div>
+
+<form name="juego2" id="juego2">
+     
+    <label for="selectnivel2preg1">¿De que signo son los nacidos entre el 20 de marzo al 20 de abril?</label>
+     
+    <select name="selectnivel2preg1" id="selectnivel2preg1">
+         <option value="Seleccionar una opción" disabled selected> Seleccionar una opción </option>
+         <option value="Virgo">Virgo</option> 
+         <option value="Tauro">Tauro</option>
+         <option value="Cancer">Cancer</option>
+         <option value="Libra">Libra</option>
+    </select><br><br>
+
+    <label for="selectnivel2preg2">¿A que signo lo simboliza un Leon?</label>
+     
+    <select name="selectnivel2preg2" id="selectnivel2preg2">
+         <option value="Seleccionar una opción2" disabled selected> Seleccionar una opción </option>
+         <option value="Tauro">Tauro</option> 
+         <option value="Cancer">Cancer</option>
+         <option value="Leo">Leo</option>
+    </select><br><br>
+
+    <label for="selectnivel2preg3">¿A que signo lo simboliza una balanza?</label>
+     
+    <select name="selectnivel2preg3" id="selectnivel2preg3">
+         <option value="Seleccionar una opción3" disabled selected> Seleccionar una opción </option>
+         <option value="Leo"> Leo</option> 
+         <option value="Libra">Libra</option>
+         <option value="Geminis">Geminis</option>
+         <option value="Aries">Aries</option>
+    </select><br><br>
+
+    <label for="selectnivel2preg4">¿De que signo son los nacidos entre el de 22 de dic y 20 de enero?</label>
+     
+    <select name="selectnivel2preg4" id="selectnivel2preg4">
+         <option value="Seleccionar una opción4" disabled selected> Seleccionar una opción </option>
+         <option value="Capricornio">Capricornio</option> 
+         <option value="Acuario">Acuario</option>
+         <option value="Virgo">Libra </option>
+         <option value="Aprender a comportarse">Geminis</option>
+    </select><br><br>
+
+    <label for="selectnivel2preg5">¿Los de leo en que mes nacieron?</label>
+     
+    <select name="selectnivel2preg5" id="selectnivel2preg5">
+         <option value="Seleccionar una opción5" disabled selected> Seleccionar una opción </option>
+         <option value="Marzo">Marzo</option> 
+         <option value="Abril">Abril</option>
+         <option value="Agosto">Agosto</option>
+         <option value="Mayo">Mayo</option>
+    </select><br><br>
+
+    <label for="selectnivel2preg6">¿En que mes nacieron los de cancer?</label>
+     
+    <select name="selectnivel2preg6" id="selectnivel2preg6">
+         <option value="Seleccionar una opción6" disabled selected> Seleccionar una opción </option>
+         <option value="Junio">Junio </option> 
+         <option value="Julio">Julio</option>
+         <option value="Enero">Enero</option>
+         <option value="Diciembre">Diciembre</option>
+    </select><br><br>
+
+    <input type="button" name="verif2" id="verif2" value="Ver mis puntos" onclick="verificar2();">
+
+</form>
+</section>
+<script src="JuegoDePreg1.js"> </script>
+<footer> INFORMATICA GENERAL - 2020- DRELICHMAN UNA </footer> 
+
+</body>
+</html>
