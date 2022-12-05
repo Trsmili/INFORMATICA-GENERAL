@@ -4,7 +4,7 @@
 	var preguntas =['¿Cancer es un signo de...?','¿Cual es el primer signo del zodiaco?',
 	'¿Cual es el signo mas sensible?','¿Cual es el signo mas engreido?',
 	'¿Cual es el ultimo signo del zodiaco?','¿Capricornio es un signo de...?',];
-	var respuestas=['Agua','Aries','Piscis','Leo','Piscis','Tierra',];
+	var respuestas=['AGUA','ARIES','PISCIS','LEO','PISCIS','TIERRA',];
 	//Un Array con las respuestas.
 	var puntaje1 =0;//Inicializo variable contador en 0
 	var actual =0;
@@ -29,7 +29,7 @@
 
      function responder()
      {
-     	respuestasusuario=document.juego.user.value;
+     	respuestasusuario=document.juego.user.value.toUpperCase();
      	if (respuestasusuario==respuestas[actual])
      		{   
      			alert('¡Respuesta Correcta!');
